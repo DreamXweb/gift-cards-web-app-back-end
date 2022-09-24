@@ -1,0 +1,16 @@
+{
+  "name": "sample-http",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/firestore": "5.0.2",
+    "axios": "^0.27.2"
+  },
+  "scripts": {
+    "setProjId": "gcloud config set project dreamx-a4eba",
+    "start": "set GOOGLE_APPLICATION_CREDENTIALS=***.json&& npx functions-framework --target=main",
+    "deploy": "gcloud functions deploy *** --entry-point=main --trigger-http --runtime=nodejs12 --allow-unauthenticated"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.2"
+  }
+}
