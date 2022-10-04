@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "dependencies": {
     "@google-cloud/firestore": "5.0.2",
+    "@types/express": "^4.17.13",
     "axios": "^0.27.2"
   },
   "scripts": {
     "setProjId": "gcloud config set project dreamx-a4eba",
-    "start": "set GOOGLE_APPLICATION_CREDENTIALS=***.json&& npx functions-framework --target=main",
-    "deploy": "gcloud functions deploy *** --entry-point=main --trigger-http --runtime=nodejs12 --allow-unauthenticated"
+    "start": "set GOOGLE_APPLICATION_CREDENTIALS=C:/Users/alexx/dreamx-a4eba-da0aaef550a0.json&& npx functions-framework --target=main",
+    "deploy": "gcloud functions deploy cloud-functions-firestore --entry-point=main --trigger-http --runtime=nodejs12 --allow-unauthenticated"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^3.1.2"
